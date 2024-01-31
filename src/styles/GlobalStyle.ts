@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     body {
-        background-color: ${({ theme }) => theme.background};
+        background: linear-gradient(to top, ${({ theme }) => theme.primary}, ${({ theme }) => theme.background});
         color: ${({ theme }) => theme.text};
     }
 `

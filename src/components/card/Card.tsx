@@ -1,13 +1,13 @@
 import { CardContainer } from "./styles";
 
 interface CardProps {
-    chageDigimon: () => void,
+    changeDigimon: () => void,
     src: string;
 }
 
-export default function Card({ src, chageDigimon }: CardProps) {
+export default function Card({ src, changeDigimon }: CardProps) {
     return (
-        <CardContainer onClick={chageDigimon}>
+        <CardContainer onClick={changeDigimon}>
             <img src={src} alt="Figura de um Digimon" />
         </CardContainer>
     );

@@ -18,11 +18,9 @@ export default function App() {
     <>
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
-
         <Header />
         <Main changeTheme={handleTheme} />
       </ThemeProvider>
-
     </>
   )
 }

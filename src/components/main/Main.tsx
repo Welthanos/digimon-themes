@@ -1,7 +1,11 @@
 import { SetStateAction } from 'react'
 import digimonOneImg from '../../assets/image 50.svg'
 import { Button, ButtonContainer } from '../button/styles'
+import Card from '../card/Card'
+import CardGroup from '../cards/CardGroup'
 import { MainContainer } from './styles'
+
+import agumon from "../../assets/agumon.png";
 
 interface MainProps {
     changeTheme: (theme: SetStateAction<"light" | "dark">) => void
@@ -10,7 +14,7 @@ interface MainProps {
 export function Main({ changeTheme }: MainProps): JSX.Element {
     return (
         <MainContainer>
-            <section>
+            <section className="image-container">
                 <div>
                     <img src={digimonOneImg} alt="Imagem Digimon" />
                     <p>Digimon</p>
@@ -33,6 +37,21 @@ export function Main({ changeTheme }: MainProps): JSX.Element {
                         DARK THEME
                     </Button>
                 </ButtonContainer>
+            </section>
+
+            <section className='cards-container'>
+                <CardGroup>
+                    <Card src={agumon} />
+                    <Card src={agumon} />
+                    <Card src={agumon} />
+                    <Card src={agumon} />
+                    <Card src={agumon} />
+                    <Card src={agumon} />
+                    <Card src={agumon} />
+                    <Card src={agumon} />
+                    <Card src={agumon} />
+                    <Card src={agumon} />
+                </CardGroup>
             </section>
         </MainContainer>
     )

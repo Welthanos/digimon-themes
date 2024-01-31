@@ -6,7 +6,6 @@ export const CardContainer = styled.div`
     padding: 1rem 0.5rem;
     background: linear-gradient(to top, ${({ theme }) => theme.text}, ${({ theme }) => theme.primary});
     border-radius: 5px;
-    margin-left: 10rem;
 
     & img {
         height: 100%;

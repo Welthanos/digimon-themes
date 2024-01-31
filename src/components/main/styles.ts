@@ -5,18 +5,24 @@ export const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
 
-    & > section {
+    .image-container {
         display: flex;
         justify-content: space-evenly;
         width: 100%;
-        max-width: 800px;
+        max-width: 1000px;
         margin: 2rem auto;
     }
 
-    & div {
+    .image-container .div {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .cards-container {
+        display: flex;
+        margin: 3rem auto auto auto;
+        max-width: 52rem;
     }
 
     & img {

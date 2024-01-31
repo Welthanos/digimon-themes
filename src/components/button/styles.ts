@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 type BgColorProps = '#93CBC4' | '#1D3C43';
-type ColorProps = '#FFFFFF' | '#1D3C43' 
+type ColorProps = '#FFFFFF' | '#1D3C43'
 
 interface ButtonProps {
     children: React.ReactNode,
-    bgColor: BgColorProps
+    bgcolor: BgColorProps
     color: ColorProps
 }
 
@@ -21,7 +21,7 @@ export const Button = styled.button<ButtonProps>`
     height: 60px;
     width: 20rem;
     font-size: 1.25rem;
-    background-color: ${({ bgColor }) => bgColor};
+    background-color: ${(props) => props.bgcolor};
     border-radius: 8px;
     border: none;
     color: ${(props) => props.color};

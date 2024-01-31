@@ -20,7 +20,7 @@ export function Main({ changeTheme }: MainProps): JSX.Element {
                     <Button
                         onClick={() => changeTheme('light')}
                         color='#1D3C43'
-                        bgColor='#ABC8C6'
+                        bgColor='#93CBC4'
                     >
                         LIGHT THEME
                     </Button>

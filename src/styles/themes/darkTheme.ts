@@ -1,4 +1,4 @@
-export const lightTheme = {
+export const darkTheme = {
     text: '#ffffff',
     background: '#2a2c2e',
     primary: '#ABC8C6',

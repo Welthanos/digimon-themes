@@ -17,17 +17,19 @@ export function Main({ changeTheme, theme }: MainProps): JSX.Element {
     const changeToDark = () => {
         if (theme === 'dark') return;
 
-        const newImage = `${digimon.split('.')[0]}-black.png`;
+        const newDigimon = `${digimon.split('.')[0]}-black.png`;
         changeTheme('dark');
-        setDigimon(newImage);
+        setDigimon(newDigimon);
+
+        console.log(newDigimon);
     }
 
     const changeToLight = () => {
         if (theme === 'light') return;
 
-        const newImage = `${digimon.substring(0, digimon.length - 10)}.png`;
+        const newDigimon = `${digimon.substring(0, digimon.length - 10)}.png`;
         changeTheme('light');
-        setDigimon(newImage);
+        setDigimon(newDigimon);
     }
 
     return (
@@ -60,8 +62,8 @@ export function Main({ changeTheme, theme }: MainProps): JSX.Element {
             <section className='cards-container'>
                 <CardGroup>
                     {digimons.filter(d => {
-                        if (theme === 'dark') return d.name.includes(" ");
-                        return !d.name.includes(" ");
+                        if (theme === 'dark') return d.name.includes("black");
+                        return !d.name.includes("black");
                     }).map((d) => (
                         <Card key={d.name} changeDigimon={() => setDigimon(d.image)} src={d.image} />
                     ))}

@@ -9,18 +9,9 @@ A aplicação teve seu deploy feito no site da vercel, no seguinte link: <a href
 
 ## Tecnologias
 <div style="display: flex; gap: 1rem;">
-    <div style="display: flex; flex-direction: column; align-items: center">
-      <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40"/>
-        Typescript
-    </div>
-    <div style="display: flex; flex-direction: column; align-items: center">
-      <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
-      React
-    </div>
-    <div style="display: flex; flex-direction: column; align-items: center">
-      <img loading="lazy" src="https://cdn.jsdelivr.net/gh/styled-components/brand/styled-components.svg" width="40" height="40"/>
-      Styled-Components
-    </div>
+    <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40"/>
+    <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
+    <img loading="lazy" src="https://cdn.jsdelivr.net/gh/styled-components/brand/styled-components.svg" width="40" height="40"/>
 </div>
 
 ## Como Instalar

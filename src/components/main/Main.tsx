@@ -4,18 +4,7 @@ import Card from '../card/Card'
 import CardGroup from '../cards/CardGroup'
 import { MainContainer } from './styles'
 
-import agumon from "../../assets/agumon.png";
-import gabumon from "../../assets/gabumon.png";
-import garudamon from "../../assets/garudamon.png";
-import gatomon from "../../assets/gatomon.png";
-import growmon from "../../assets/growmon.png";
-import guilmon from "../../assets/guilmon.png";
-import veemon from "../../assets/veemon.png";
-import patamon from "../../assets/patamon.png";
-import gaomon from "../../assets/gaomon.png";
-import metalgreymon from "../../assets/metalgreymon.png";
-
-
+import digimons from "../digimons/digimons";
 
 interface MainProps {
     changeTheme: (theme: SetStateAction<"light" | "dark">) => void;
@@ -23,15 +12,13 @@ interface MainProps {
 }
 
 export function Main({ changeTheme, theme }: MainProps): JSX.Element {
-    const [digimon, setDigimon] = useState(agumon);
+    const [digimon, setDigimon] = useState(digimons[0].image);
 
     const changeToDark = () => {
         if (theme === 'dark') return;
 
         const newImage = `${digimon.split('.')[0]}-black.png`;
-
         changeTheme('dark');
-
         setDigimon(newImage);
     }
 
@@ -39,13 +26,9 @@ export function Main({ changeTheme, theme }: MainProps): JSX.Element {
         if (theme === 'light') return;
 
         const newImage = `${digimon.substring(0, digimon.length - 10)}.png`;
-
         changeTheme('light');
-
         setDigimon(newImage);
     }
-
-    console.log(digimon);
 
     return (
         <MainContainer>
@@ -76,16 +59,12 @@ export function Main({ changeTheme, theme }: MainProps): JSX.Element {
 
             <section className='cards-container'>
                 <CardGroup>
-                    <Card changeDigimon={() => setDigimon(agumon)} src={agumon} />
-                    <Card changeDigimon={() => setDigimon(guilmon)} src={guilmon} />
-                    <Card changeDigimon={() => setDigimon(gabumon)} src={gabumon} />
-                    <Card changeDigimon={() => setDigimon(patamon)} src={patamon} />
-                    <Card changeDigimon={() => setDigimon(veemon)} src={veemon} />
-                    <Card changeDigimon={() => setDigimon(gatomon)} src={gatomon} />
-                    <Card changeDigimon={() => setDigimon(gaomon)} src={gaomon} />
-                    <Card changeDigimon={() => setDigimon(growmon)} src={growmon} />
-                    <Card changeDigimon={() => setDigimon(metalgreymon)} src={metalgreymon} />
-                    <Card changeDigimon={() => setDigimon(garudamon)} src={garudamon} />
+                    {digimons.filter(d => {
+                        if (theme === 'dark') return d.name.includes(" ");
+                        return !d.name.includes(" ");
+                    }).map((d) => (
+                        <Card key={d.name} changeDigimon={() => setDigimon(d.image)} src={d.image} />
+                    ))}
                 </CardGroup>
             </section>
         </MainContainer>

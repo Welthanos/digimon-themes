@@ -1,7 +1,7 @@
 export const darkTheme = {
     text: '#ffffff',
-    background: '#2a2c2e',
-    primary: '#ABC8C6',
-    second: '#1A4852',
+    background: '#121111',
+    primary: '#1D3C43',
+    second: '#93CBC4',
     accent: '#6F8E8C'
 }

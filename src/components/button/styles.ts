@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-type BgColorProps = '#ABC8C6' | '#1D3C43';
+type BgColorProps = '#93CBC4' | '#1D3C43';
 type ColorProps = '#FFFFFF' | '#1D3C43' 
 
 interface ButtonProps {

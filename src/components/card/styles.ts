@@ -7,6 +7,7 @@ export const CardContainer = styled.button`
     background: linear-gradient(to top, ${({ theme }) => theme.text}, ${({ theme }) => theme.primary});
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 
     & img {
         max-width: 100%;

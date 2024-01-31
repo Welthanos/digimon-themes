@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# TASK 01 - Aplicação temática com Styled-Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre o Projeto
+Essa é uma aplicação sobre Digimons e temas, a aplicação foi estilizada totalmente com Styled-Components e possui troca dinâmica de temas, que são requisitos da task 01 no módulo de Context/Styled-Components.
 
-Currently, two official plugins are available:
+A aplicação teve um protótipo no figma antes de sua contrução: <a href="https://www.figma.com/file/d0kUy4BbPlocrheLk9Lo4s/Digimon-Themes?type=design&node-id=22%3A2&mode=dev">Link do Figma</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A aplicação teve seu deploy feito no site da vercel, no seguinte link: <a href="https://digimon-themes.vercel.app/">Link do Deploy</a>
 
-## Expanding the ESLint configuration
+## Tecnologias
+<div style="display: flex; gap: 1rem;">
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40"/>
+        Typescript
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
+      React
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <img loading="lazy" src="https://cdn.jsdelivr.net/gh/styled-components/brand/styled-components.svg" width="40" height="40"/>
+      Styled-Components
+    </div>
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Como Instalar
 
-- Configure the top-level `parserOptions` property like this:
+Abra o terminal em uma pasta de sua preferência e digite o comando abaixo para clonar o repositório:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+    git clone https://github.com/Welthanos/digimon-themes.git
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Após isso, digite o comando abaixo para entrar na pasta do projeto:
+
+    cd digimon-themes
+
+Agora, já na pasta do projeto, você deve instalar as dependências do projeto com o comando a seguir:
+
+    npm install
+
+Agora, para executar a aplicação, digite:
+
+    npm run dev
+
+Com isso, você receberá a URL que deve acessar com a respectiva porta
+
+## Integrantes
+- Victor Garcia
+- Welton Santos

@@ -21,12 +21,13 @@ export const MainContainer = styled.main`
 
     .cards-container {
         display: flex;
-        margin: 3rem auto auto auto;
+        margin: 0 auto;
+        padding-block: 3rem;
         max-width: 52rem;
     }
 
     & img {
-        width: 10rem;
+        height: 15rem;
     }
 
     & p {

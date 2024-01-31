@@ -6,8 +6,9 @@ import { SetStateAction, useState } from "react";
 import { Header } from "./components/header/Header";
 import { Main } from "./components/main/Main";
 
-export default function App() {
 
+
+export default function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   function handleTheme(theme: SetStateAction<"light" | "dark">) {
@@ -19,7 +20,7 @@ export default function App() {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Header />
-        <Main changeTheme={handleTheme} />
+        <Main theme={theme} changeTheme={handleTheme} />
       </ThemeProvider>
     </>
   )

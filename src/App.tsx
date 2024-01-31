@@ -4,6 +4,7 @@ import { darkTheme } from './styles/themes/darkTheme';
 import { ThemeProvider } from "styled-components";
 import { useState } from "react";
 import { Header } from "./components/header/Header";
+import { Main } from "./components/main/Main";
 
 export default function App() {
 
@@ -19,7 +20,7 @@ export default function App() {
         <GlobalStyles />
 
         <Header />
-        <button onClick={handleTheme}>trocar tema</button>
+        <Main />
       </ThemeProvider>
 
     </>
